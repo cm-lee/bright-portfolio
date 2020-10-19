@@ -6,7 +6,7 @@ html { height: 100%; }
 
 body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14px; box-sizing: border-box; }
 
-.wrapper { padding: 50px 100px 100px; }
+.wrapper { padding: 50px 100px 0; }
 
 .header__tit { display: inline-block; position: relative; margin: 0 20px 0 0; padding: 0 124px 0 0; font-family: "Roboto", sans-serif; font-size: 57px; font-weight: 700; text-transform: uppercase; line-height: 1; }
 
@@ -16,7 +16,19 @@ body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14p
 
 .header__link:hover { color: #9fbde7; letter-spacing: 10px; }
 
-.portfolio { margin-top: 40px; counter-reset: section; overflow: hidden; }
+.footer { position: relative; margin: 0 -100px; padding: 50px 100px 80px; background-color: #e0e9f6; }
+
+.footer__txt { margin: 0; font-size: 12px; color: #333; }
+
+.footer__txt + .footer__txt { margin-top: 6px; }
+
+.footer__link { display: inline-block; position: absolute; top: -20px; right: 50px; width: 90px; height: 40px; background-color: #333; font-size: 12px; font-weight: 700; color: #fff; text-align: center; text-decoration: none; text-transform: uppercase; transition: background-color, letter-spacing 0.3s; }
+
+.footer__link:hover { background-color: #9fbde7; letter-spacing: 2px; }
+
+.footer__vertical { display: table-cell; width: 1%; height: inherit; vertical-align: middle; }
+
+.portfolio { margin-top: 40px; padding-bottom: 120px; counter-reset: section; overflow: hidden; }
 
 .portfolio__section:nth-child(even) .portfolio__wrap { float: left; }
 
@@ -64,7 +76,9 @@ body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14p
 
 .portfolio__use { margin: 0; font-size: 16px; }
 
-.portfolio__btn { display: inline-block; margin-top: 30px; padding: 10px 30px; border: 2px solid #9fbde7; border-radius: 20px; font-size: 12px; font-weight: 700; color: #18519f; text-transform: uppercase; text-decoration: none; }
+.portfolio__btn { display: inline-block; margin-top: 30px; padding: 10px 30px; border: 2px solid #9fbde7; border-radius: 20px; font-size: 12px; font-weight: 700; color: #18519f; text-transform: uppercase; text-decoration: none; transition: letter-spacing 0.3s; }
+
+.portfolio__btn:hover { background-color: #9fbde7; letter-spacing: 2px; color: #fff; }
 
 .portfolio-part { margin-top: 5px; padding-right: 140px; font-size: 0; }
 
@@ -88,7 +102,7 @@ body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14p
 
 .portfolio-use__list { margin: 10px 0 0; padding: 0; font-size: 0; }
 
-.portfolio-use__item { display: inline-block; width: 50px; height: 50px; background-color: #e7c0e2; font-size: 10px; font-weight: 700; color: #fff; text-align: center; list-style: none; }
+.portfolio-use__item { display: inline-block; width: 50px; height: 50px; font-size: 10px; font-weight: 700; color: #fff; text-align: center; list-style: none; }
 
 .portfolio-use__item + .portfolio-use__item { margin-left: 4px; }
 
