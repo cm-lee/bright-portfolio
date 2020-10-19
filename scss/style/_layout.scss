@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 html, body{margin: 0;padding: 0;color: #333;font-weight: $light;line-height: 1.3;word-break: keep-all;}
 html{height: 100%;}
 body{min-height: 100%;font-family: $font-normal;font-size: 14px;box-sizing: border-box;}
+
+.wrapper{padding: 50px 100px 100px;}
+
+.header{
+    &__tit{display: inline-block;position: relative;margin: 0 20px 0 0;padding: 0 124px 0 0;font-family: $font-point;font-size: 57px;font-weight: $bold;text-transform: uppercase;line-height: 1;
+        &:after{content: '';position: absolute;bottom: 20px;right: 0;width: 100px;height: 16px;background-color: #9fbde7;}
+    }
+    &__link{display: inline-block;font-family: $font-point;font-size: 3vw;font-weight: $bold;color: #333;text-transform: uppercase;text-decoration: none;transition: color, letter-spacing 0.3s;
+        &:hover{color: #9fbde7;letter-spacing: 10px;}
+    }
+}
