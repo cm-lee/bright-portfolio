@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    // $('.portfolio').fullpage({})
+    $('.portfolio').fullpage({})
 });

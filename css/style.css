@@ -4,15 +4,15 @@ html, body { margin: 0; padding: 0; color: #333; font-weight: 300; line-height: 
 
 html { height: 100%; }
 
-body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14px; box-sizing: border-box; }
+body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; box-sizing: border-box; }
 
 .wrapper { padding: 50px 100px 0; }
 
-.header__tit { display: inline-block; position: relative; margin: 0 20px 0 0; padding: 0 124px 0 0; font-family: "Roboto", sans-serif; font-size: 57px; font-weight: 700; text-transform: uppercase; line-height: 1; }
+.header__tit { display: inline-block; position: relative; margin: 0 20px 0 0; padding: 0 124px 0 0; font-family: "Lora", serif; font-size: 57px; font-weight: 700; text-transform: uppercase; line-height: 1; }
 
 .header__tit:after { content: ''; position: absolute; bottom: 20px; right: 0; width: 100px; height: 16px; background-color: #9fbde7; }
 
-.header__link { display: inline-block; font-family: "Roboto", sans-serif; font-size: 3vw; font-weight: 700; color: #333; text-transform: uppercase; text-decoration: none; transition: color, letter-spacing 0.3s; }
+.header__link { display: inline-block; font-family: "Lora", serif; font-size: 3vw; font-weight: 700; color: #333; text-transform: uppercase; text-decoration: none; transition: color, letter-spacing 0.3s; }
 
 .header__link:hover { color: #9fbde7; letter-spacing: 10px; }
 
@@ -52,7 +52,7 @@ body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14p
 
 .portfolio__wrap { float: right; position: relative; width: 60%; }
 
-.portfolio__wrap:before { content: "0" counter(section); counter-increment: section; position: absolute; top: -10%; left: -50%; font-family: "Roboto", sans-serif; font-size: 60vw; font-weight: 700; z-index: -1; opacity: 0.2; }
+.portfolio__wrap:before { content: "0" counter(section); counter-increment: section; position: absolute; top: -10%; left: -50%; font-family: "Lora", serif; font-size: 60vw; font-weight: 700; z-index: -1; opacity: 0.2; }
 
 .portfolio__preview { display: inline-block; position: relative; padding: 0 40px; }
 
@@ -68,7 +68,7 @@ body { min-height: 100%; font-family: "Noto Sans KR", sans-serif; font-size: 14p
 
 .portfolio__head:after { content: ''; position: absolute; left: 0; bottom: 0; width: 50px; height: 5px; background-color: #9fbde7; }
 
-.portfolio__tit { margin: 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; text-transform: uppercase; letter-spacing: -2px; }
+.portfolio__tit { margin: 0; font-family: "Lora", serif; font-size: 60px; font-weight: 700; text-transform: uppercase; letter-spacing: -2px; }
 
 .portfolio__subtit { margin: 0; font-size: 16px; letter-spacing: 3px; }
 
