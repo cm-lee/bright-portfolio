@@ -7,7 +7,7 @@ body{min-height: 100%;font-family: $font-normal;font-size: 14px;box-sizing: bord
 
 .wrapper{}
 
-.header{position: fixed;top: 40px;left: 40px;width: 100%;z-index: 10;
+.header{position: fixed;top: 40px;right: 40px;z-index: 10;
     &__tit{display: inline-block;margin: 0;font-size: 20px;text-transform: capitalize;}
     &__link{display: inline-block;margin-left: 20px;font-size: 13px;color: #333;text-decoration: none;
         &:hover{color: #bcaaa8;}

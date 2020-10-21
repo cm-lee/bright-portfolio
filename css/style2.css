@@ -6,7 +6,7 @@ html { height: 100%; }
 
 body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; box-sizing: border-box; }
 
-.header { position: fixed; top: 40px; left: 40px; width: 100%; z-index: 10; }
+.header { position: fixed; top: 40px; right: 40px; z-index: 10; }
 
 .header__tit { display: inline-block; margin: 0; font-size: 20px; text-transform: capitalize; }
 
@@ -16,35 +16,37 @@ body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; b
 
 .portfolio__section { position: relative; min-height: 100vh; }
 
-.portfolio__section:before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 50%; background-color: #ede0df; }
+.portfolio__section:before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 500px; background-color: #ede0df; }
 
-.portfolio__section.nth-3 { background: url("../../images/portfolio/portfolio_img_1.jpg") no-repeat 0 0/cover; background-attachment: fixed; }
+.portfolio__section.nth-1 { background: url("../../images/portfolio/portfolio_img_1.jpg") no-repeat center center/cover; background-attachment: fixed; }
 
-.portfolio__section.nth-2 { background: url("../../images/portfolio/portfolio_img_2.jpg") no-repeat 0 0/cover; background-attachment: fixed; }
+.portfolio__section.nth-2 { background: url("../../images/portfolio/portfolio_img_2.jpg") no-repeat center center/cover; background-attachment: fixed; }
 
-.portfolio__section.nth-1 { background: url("../../images/portfolio/portfolio_img_3.jpg") no-repeat 0 0/cover; background-attachment: fixed; }
+.portfolio__section.nth-3 { background: url("../../images/portfolio/portfolio_img_3.jpg") no-repeat center center/cover; background-attachment: fixed; }
 
-.portfolio__wrap { position: relative; width: 50%; min-height: 100vh; }
+.portfolio__section.nth-4 { background: url("../../images/portfolio/portfolio_img_4.jpg") no-repeat center center/cover; background-attachment: fixed; }
 
-.portfolio__box { position: absolute; bottom: 5%; right: 5%; width: 300px; }
+.portfolio__wrap { width: 500px; min-height: 100vh; padding: 50px; box-sizing: border-box; }
 
-.portfolio__head { position: relative; padding: 20% 0 0 15%; }
+.portfolio__inner { position: relative; }
 
-.portfolio__tit { margin: 0; font-size: 80px; font-weight: 700; color: #fff; text-transform: capitalize; line-height: 1.2; }
+.portfolio__tit { margin: 0; font-size: 54px; font-weight: 700; color: #fff; text-transform: capitalize; line-height: 1.2; }
 
-.portfolio__subtit { margin: 10px 0 0; font-size: 13px; letter-spacing: 3px; }
+.portfolio__subtit { margin: 18px 0 0; font-size: 13px; letter-spacing: 3px; }
 
-.portfolio__btn { display: inline-block; margin-top: 20px; padding: 10px 30px; background-color: #cab5b4; border-radius: 20px; font-size: 12px; font-weight: 700; color: #fff; text-transform: uppercase; text-decoration: none; transition: letter-spacing 0.3s; }
+.portfolio__btn { display: inline-block; margin-top: 30px; padding: 10px 30px; background-color: #cab5b4; border-radius: 20px; font-size: 12px; font-weight: 700; color: #fff; text-transform: uppercase; text-decoration: none; transition: letter-spacing 0.3s; }
 
 .portfolio__btn:hover { letter-spacing: 2px; }
 
 .portfolio__point { color: #cab5b4; }
 
-.portfolio-part { margin-top: 5px; font-size: 0; }
+.portfolio-part { margin-top: 50px; font-size: 0; }
 
 .portfolio-part.type-100 .portfolio-part__list:after { width: 100%; }
 
 .portfolio-part.type-80 .portfolio-part__list:after { width: 80%; }
+
+.portfolio-part.type-60 .portfolio-part__list:after { width: 60%; }
 
 .portfolio-part__tit { margin: 0; font-size: 13px; color: #333; }
 
@@ -79,3 +81,9 @@ body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; b
 .portfolio-use__item.type-bem { background-color: #1b1414; }
 
 .portfolio-use__vertical { display: table-cell; width: 1%; height: inherit; vertical-align: middle; }
+
+.portfolio-desc { margin-top: 20px; }
+
+.portfolio-desc__tit { margin: 0; font-size: 13px; color: #333; }
+
+.portfolio-desc__txt { margin: 10px 0 0; font-size: 13px; line-height: 1.75; }

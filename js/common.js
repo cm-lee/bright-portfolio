@@ -1,3 +1,1 @@
-$(document).ready(function(){
-    $('.portfolio').fullpage({})
-});
+$(document).ready(function(){});
