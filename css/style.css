@@ -15,7 +15,8 @@ body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; b
 
 @media only screen and (max-width: 1025px) { .header { top: 20px; right: 20px; } }
 
-@media only screen and (max-width: 680px) { .header__tit { font-size: 1.5rem; } }
+@media only screen and (max-width: 680px) { .header { right: auto; left: 20px; }
+  .header__tit { font-size: 1.5rem; } }
 
 .hidden-m { display: inline-block !important; }
 
