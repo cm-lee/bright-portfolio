@@ -1,22 +1,61 @@
 .portfolio{
     $this:&;
     
-    &__section{position: relative;min-height: 100vh;
-        &:before{content: '';position: absolute;top: 0;bottom: 0;left: 0;width: 500px;background-color: #ede0df;}
-        &.nth-1{background: url('../../images/portfolio/portfolio_img_1.jpg') no-repeat center center/cover;background-attachment: fixed;}
-        &.nth-2{background: url('../../images/portfolio/portfolio_img_2.jpg') no-repeat center center/cover;background-attachment: fixed;}
-        &.nth-3{background: url('../../images/portfolio/portfolio_img_3.jpg') no-repeat center center/cover;background-attachment: fixed;}
-        &.nth-4{background: url('../../images/portfolio/portfolio_img_4.jpg') no-repeat center center/cover;background-attachment: fixed;}
+    &__section{
+        &.nth-1{
+            #{$this}__preview{background: url('../../images/portfolio/portfolio_img_1.jpg') center center/cover;}
+        }
+        &.nth-2{
+            #{$this}__preview{background: url('../../images/portfolio/portfolio_img_2.jpg') center center/cover;}
+        }
+        &.nth-3{
+            #{$this}__preview{background: url('../../images/portfolio/portfolio_img_3.jpg') center center/cover;}
+        }
+        &.nth-4{
+            #{$this}__preview{background: url('../../images/portfolio/portfolio_img_4.jpg') center center/cover;}
+        }
+        &:nth-child(even){
+            #{$this}__preview{left: auto;right: 0;}
+            #{$this}__box{margin-left: 0;margin-right: 60%;}
+        }
+        & + &{margin-top: 80px;}
     }
-    &__wrap{width: 500px;min-height: 100vh;padding: 50px;box-sizing: border-box;}
-    &__inner{position: relative;}
+    &__wrap{position: relative;}
+    &__preview{position: absolute;top: 0;left: 0;width: 60%;height: 100%;}
+    &__box{margin-left: 60%;padding: 80px;background-color: #ede0df;}
     &__head{}
-    &__tit{margin: 0;font-size: 54px;font-weight: $bold;color: #fff;text-transform: capitalize;line-height: 1.2;}
+    &__tit{margin: 0;font-size: 48px;font-weight: $bold;color: #fff;text-transform: capitalize;line-height: 1.2;}
     &__subtit{margin: 18px 0 0;font-size: 13px;letter-spacing: 3px;}
     &__btn{display: inline-block;margin-top: 30px;padding: 10px 30px;background-color: #cab5b4;border-radius: 20px;font-size: 12px;font-weight: $bold;color: #fff;text-transform: uppercase;text-decoration: none;transition: letter-spacing 0.3s;
         &:hover{letter-spacing: 2px;}
     }
     &__point{color: #cab5b4;}
+
+    @media only screen and (max-width: $tablet-size){
+        &__section{
+            &:nth-child(even){
+                #{$this}__box{margin-right: 0;}
+            }
+            & + &{margin-top: 40px;}
+        }
+
+        &__preview{position: static;width: 100%;height: 400px;}
+        &__box{margin-left: 0;padding: 40px;}
+        &__tit{font-size: 32px;}
+        &__subtit{margin-top: 8px;}
+    }
+    @media only screen and (max-width: $mobile-size){
+        &__section{
+            & + &{margin-top: 20px;}
+        }
+
+        &__preview{height: 200px;}
+        &__box{position: relative;padding: 20px;}
+        &__tit{font-size: 1.3rem;}
+        &__subtit{margin-top: 4px;font-size: 1.0rem;}
+        &__btn{position: absolute;top: -74px;right: 10px;font-size: 1.0rem;}
+        
+    }
 }
 
 .portfolio-part{margin-top: 50px;font-size: 0;
@@ -44,6 +83,17 @@
     }
     &__item{display: inline-block;position: relative;width: 20%;height: 30px;font-size: 10px;font-weight: $bold;color: #fff;text-align: center;list-style: none;z-index: 5;}
     &__vertical{display: table-cell;width: 1%;height: inherit;vertical-align: middle;}
+
+    @media only screen and (max-width: $tablet-size){
+        margin-top: 30px;
+    }
+
+    @media only screen and (max-width: $mobile-size){
+        margin-top: 20px;
+
+        &__tit{font-size: 1.0rem;}
+        &__list{margin-top: 4px;}
+    }
 }
 
 .portfolio-use{margin-top: 20px;
@@ -59,9 +109,24 @@
         &.type-bem{background-color: #1b1414;}
     }
     &__vertical{display: table-cell;width: 1%;height: inherit;vertical-align: middle;}
+
+    @media only screen and (max-width: $mobile-size){
+        margin-top: 10px;
+
+        &__tit{font-size: 1.0rem;}
+        &__list{margin-top: 4px;}
+        &__item{height: 30px;font-size: 1.0rem;}
+    }
 }
 
 .portfolio-desc{margin-top: 20px;
     &__tit{margin: 0;font-size: 13px;color: #333;}
     &__txt{margin: 10px 0 0;font-size: 13px;line-height: 1.75;}
+
+    @media only screen and (max-width: $mobile-size){
+        margin-top: 10px;
+
+        &__tit{font-size: 1.0rem;}
+        &__txt{margin-top: 4px;font-size: 1.0rem;}
+    }
 }
