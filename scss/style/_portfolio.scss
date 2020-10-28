@@ -20,7 +20,7 @@
         }
         & + &{margin-top: 80px;}
     }
-    &__wrap{position: relative;}
+    &__wrap{position: relative;border-radius: 30px;overflow: hidden;}
     &__preview{position: absolute;top: 0;left: 0;width: 60%;height: 100%;}
     &__box{margin-left: 60%;padding: 80px;background-color: #ede0df;}
     &__head{}
@@ -48,7 +48,7 @@
         &__section{
             & + &{margin-top: 20px;}
         }
-
+        &__wrap{border-radius: 14px;}
         &__preview{height: 200px;}
         &__box{position: relative;padding: 20px;}
         &__tit{font-size: 1.3rem;}

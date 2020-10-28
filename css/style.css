@@ -39,7 +39,7 @@ body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; b
 
 .portfolio__section + .portfolio__section { margin-top: 80px; }
 
-.portfolio__wrap { position: relative; }
+.portfolio__wrap { position: relative; border-radius: 30px; overflow: hidden; }
 
 .portfolio__preview { position: absolute; top: 0; left: 0; width: 60%; height: 100%; }
 
@@ -63,6 +63,7 @@ body { min-height: 100%; font-family: "Noto Serif KR", serif; font-size: 14px; b
   .portfolio__subtit { margin-top: 8px; } }
 
 @media only screen and (max-width: 680px) { .portfolio__section + .portfolio__section { margin-top: 20px; }
+  .portfolio__wrap { border-radius: 14px; }
   .portfolio__preview { height: 200px; }
   .portfolio__box { position: relative; padding: 20px; }
   .portfolio__tit { font-size: 1.3rem; }
